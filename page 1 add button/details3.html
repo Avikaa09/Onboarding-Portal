@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="details1.css">
+</head>
+
+</html>
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <form class="form-horizontal">
+                <span class="header-image">
+                    <div class="header">Item categories</div>
+                    <img src="C:\Users\Avika\OneDrive\Desktop\Froker Onboarding\page 1 add button\Group 17.png"
+                        height="100">
+                </span>
+                <div class="form-content">
+                    <h4 class="heading"><b>Add items</b></h4>
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                            <select id="dropdown">
+                                <option value="">Select Category</option>
+                                <option value="item1">Paneer</option>
+                                <option value="item2">Chicken</option>
+                                <option value="item3">Soups</option>
+                            </select>
+                            <button type="button" id="btn" onclick="addItem()">Choose</button><br> <br>
+                            <input type="text" id="itemTextBox" placeholder="Selected item" readonly>
+
+                            <!-- <button type="button" id="additem">Add dish</button> -->
+                            <button type="button" onclick="toggleElements()">Click to add dish</button> <br> <br>
+                            <input type="text" id="textBox" placeholder="Dish name" style="display: none;"> <br>
+                            <input type="text" id="textBox2" placeholder="Dish image" style="display: none;"> <br>
+                            <div id="nveg" style="display: none;">
+                                <input type="radio" id="veg" name="vegg" value="Veg">
+                                <label for="veg">Veg</label>
+                                <input type="radio" id="nonveg" name="vegg" value="Non-veg">
+                                <label for="nonveg">Non-veg</label>
+                            </div> <br>
+
+                            <button type="button" id="btn2" onclick="openn()" style="display:none;">Add quantity and
+                                price</button>
+                            <!-- <button type="button" id="btn3" onclick="openn()">+</button> <br> <br> -->
+                            <div id="inputContainer" style="display: none;">
+                                <input type="text" id="textBox1" placeholder="Quantity"><br>
+                                <input type="text" id="priceBox" placeholder="Price"><br>
+                            </div> <br>
+                            <!-- 
+    <input type="text" id="textBox3" placeholder="Quantity" style="display: none;"> <br>
+<input type="text" id="textBox1" placeholder="Price" style="display: none;"> <br> -->
+
+                            <input type="number" id="rating" placeholder="Rating" style="display: none;" min="0"
+                                max="5"> <br>
+                            <input type="text" id="desc" placeholder="Description" size="50" style="display: none;">
+                            <br>
+<div  id="stock" style="display:none;">
+    <label for = "stockSelect">InStock?</label>
+    <select id="stockSelect">
+        <option value="True">True</option>
+        <option value="False">False</option>
+    
+    </select><br><br>
+</div>
+
+<div  id="bsell" style="display:none;">
+    <label for = "bestseller">IsbestSeller?</label>
+    <select id="bestseller">
+        <option value="True">True</option>
+        <option value="False">False</option>
+    
+    </select><br><br>
+</div>
+
+<div id="time" style="display:none;">
+<label for="ttime">From</label>
+<input type="time" id="time" >
+<label for="ttime">To</label>
+<input type="time" id="time" >
+</div>
+
+<br>
+
+
+
+
+
+                            <button type="button" id="submit" class="btn btn-default" ;>Submit</button>
+
+
+                            <div id="itemList"></div>
+                            <!-- <input class="form-control" id="exampleInputName2" placeholder="Restaurant name " type="text"> -->
+
+
+                        </div>
+                        <div class="col-sm-6">
+
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <!--<input class="form-control" id="exampleInputName2" placeholder="Address" type="text"> -->
+                        </div>
+                    </div>
+                    <!-- <h4 class="heading"><b>Contact Details</b></h4> -->
+                    <div class="form-group">
+                        <div class="col-sm-12">
+
+                        </div>
+                    </div>
+                    <!-- location part -->
+                    <div id="Details">
+
+                        <div class="clearfix">
+
+                            <button type="button" id="back" class="btn btn-default"> Back</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="details3.js"></script>
+</body>
+
+</html>
